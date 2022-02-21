@@ -1,0 +1,40 @@
+# tabuada em Python |Dário Costa|
+
+# função tabuada para que possa se repetir
+# função again para criar um laço de repetição
+
+def tabuada():
+    #print("Calculadora Python\n")
+    num = int(input("Informe um valor para ser calculado: "))
+    operador = input('''Escolha um operador\n 
+(1). Adição\n(2). Subtração\n(3). Multiplicação\n(4). Divisão\nInforme o operador: ''')
+
+    if operador == "1":
+        for c in range(1, 11):                                  # range de 1 até 10 / O ultimo é sempre ignorado pelo sistema
+            print('{} + {} = {}'.format(num, c, num+c))  
+    elif operador == "2":
+        for c in range(1, 11):
+            print('{} - {} = {}'.format(num, c, num-c))
+    elif operador == "3":
+        for c in range(1, 11):
+            print('{} X {} = {}'.format(num, c, num*c))    
+    elif operador == "4":
+        for c in range(1, 11):
+            print('{} / {} = {}'.format(num, c, num/c))
+    else:
+        print("Escolha um operador válido")
+
+    again()
+    # fim da função calculadora
+
+def again():
+    calcular_denovo = input("Quer calcular novamente: [S] Sim ou [N] Não: \n")
+    if calcular_denovo.upper() == "S":
+        tabuada()
+    elif calcular_denovo.upper() == "N":
+        print("Até mais tarde!!!")
+    else:
+        again()
+    # fim da função again
+
+tabuada()
