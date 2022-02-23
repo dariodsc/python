@@ -8,7 +8,7 @@ def calculadora():
     valor_1 = int(input("Primeiro número: "))
     valor_2 = int(input("Segundo número: "))
     calculo = input('''Escolha um operador\n 
-    (1). Adição\n(2). Subtração\n(3). Multiplicação\n(4). Divisão\nInforme o operador: ''')
+(1). Adição\n(2). Subtração\n(3). Multiplicação\n(4). Divisão\nInforme o operador: ''')
 
     if calculo == "1":
         print(f"\nResultado: {valor_1} + {valor_2} = {valor_1 + valor_2}")
