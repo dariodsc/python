@@ -1,8 +1,7 @@
-# python
-Principais projetos
+# Python
+
+Principais projetos em Python
 
 Neste repositório estarão disponíveis meus conteúdos nos quais foram melhor trabalhados. 
-
-Todo o conteúdo foi feito em Python
 
 # Dário Costa
