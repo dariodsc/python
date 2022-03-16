@@ -1,42 +1,40 @@
 # Calculadora em Python |Dário Costa|
+# Usando duas funções, uma principal e a outra para repetição do programa
 
 # função calculadora para que possa se repetir
-# função again para criar um laço de repetição
-
 def calculadora():
-    print("Calculadora Python\n")
-    valor_1 = int(input("Primeiro número: "))
-    valor_2 = int(input("Segundo número: "))
-    calculo = input('''Escolha um operador\n 
-(1). Adição\n(2). Subtração\n(3). Multiplicação\n(4). Divisão\nInforme o operador: ''')
+    print("\nCalculadora Python\n")
+    valor_1 = int(input("1º número: "))
+    valor_2 = int(input("2º número: "))
+    calculo = input('''\nEscolha um operador:\n 
+(1). Adição\n(2). Subtração\n(3). Multiplicação\n(4). Divisão\n
+Informe o operador: ''')
 
     if calculo == "1":
-        print(f"\nResultado: {valor_1} + {valor_2} = {valor_1 + valor_2}")
+        print("[1] SOMA")
+        print(f"Resultado: {valor_1} + {valor_2} = {valor_1 + valor_2}\n")
     elif calculo == "2":
-        print(f"\nResultado: {valor_1} - {valor_2} = {valor_1 - valor_2}")
+        print("[2] SUBTRAÇÃO")
+        print(f"Resultado: {valor_1} - {valor_2} = {valor_1 - valor_2}\n")
     elif calculo == "3":
-        print(f"\nResultado: {valor_1} X {valor_2} = {valor_1 * valor_2}")
+        print("[3] MULTIPLICAÇÃO")
+        print(f"Resultado: {valor_1} X {valor_2} = {valor_1 * valor_2}\n")
     elif calculo == "4":
-        print(f"\nResultado: {valor_1} / {valor_2} = {valor_1 // valor_2}")
+        print("[4] DIVISÃO")
+        print(f"Resultado: {valor_1} / {valor_2} = {valor_1 / valor_2}\n")
     else:
         print("Escolha um operador válido")
 
-    again()
-    # fim da função calculadora
+    again() # fim da função calculadora
 
+# função again para criar um laço de repetição
 def again():
-    calcular_denovo = input("Quer calcular novamente: [S] Sim ou [N] Não: \n")
-    if calcular_denovo.upper() == "S":
+    repetir = input("Quer calcular novamente: [S] Sim ou [N] Não: \n")
+    if repetir.upper() == "S":
         calculadora()
-    elif calcular_denovo.upper() == "N":
+    elif repetir.upper() == "N":
         print("Até mais tarde!!!")
     else:
-        again()
-    # fim da função again
+        again() # fim da função again
 
-calculadora()
-# chama a função calculadora para nova execução
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Securit
+calculadora() # chama a função calculadora para nova execução
